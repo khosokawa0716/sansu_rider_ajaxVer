@@ -1,0 +1,301 @@
+/*共通*/
+main {
+ width: 375px;
+ height: 750px;
+ padding-top: 15px; /*38から変更*/
+ background: #000000;
+ margin: auto;
+ font-family: arial, sans-serif;
+}
+
+.container {
+ width: 300px;
+ height: 750px;
+ margin-left: 38px;
+ background: #000000;
+ color: white;
+ position: relative;
+}
+
+.flex{
+ display: -webkit-flex;
+ display: -moz-flex;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+}
+
+/*トップ画面*/
+h1.title {
+ font-size: 16px;
+ width: 294px;
+ height: 39px;
+ text-align: center;
+ line-height: 45px;
+ border: 3px solid #ffffff;
+ border-radius: 5px;
+}
+
+.top_content {
+ width: 294px;
+ height: 424px;
+ background: rgba(0,0,0,0.5);
+ border: 3px solid #ffffff;
+ border-radius: 5px;
+ position: absolute;
+ top: 62px;
+ left: 0;
+ z-index: 2;
+}
+
+ul.top {
+ font-size: 16px;
+ list-style: none;
+ text-align: left;
+ padding: 20px;
+}
+
+ul li {
+ padding-bottom: 14px;
+ line-height: 1.2;
+}
+
+.bottom_content {
+ width: 294px;
+ height: 115px;
+ background: rgba(0,0,0,1);
+ border: 3px solid #ffffff;
+ border-radius: 5px;
+ position: absolute;
+ top: 510px;
+ left: 0;
+}
+
+.top_img {
+ position: absolute;
+ left: 3px;
+ top: 65px;
+ z-index: 1;
+}
+
+.btn-start {
+ display: inline-block;
+ width: 250px;
+ height: 80px;
+ text-align: center;
+ background: #ffa300;
+ font-size: 36px;
+ color: #ffffff;
+ text-decoration: none;
+ font-weight: bold;
+ border-radius: 5px;
+ border-bottom: 5px solid #d37800;
+ position: absolute;
+ z-index: 3;
+ left: 22px;
+ top: 350px;
+}
+
+.btn-back {
+ display: inline-block;
+ width: 250px;
+ height: 80px;
+ text-align: center;
+ background: #0000FF;
+ font-size: 36px;
+ color: #ffffff;
+ text-decoration: none;
+ font-weight: bold;
+ border-radius: 5px;
+ border-bottom: 5px solid #000099;
+ position: absolute;
+ z-index: 3;
+ left: 22px;
+ top: 350px;
+}
+
+.buruburu {
+ animation: hurueru .2s  infinite;
+}
+
+@keyframes hurueru {
+ 0% {transform: translate(0px, 0px) rotateZ(0deg)}
+ 25% {transform: translate(1px, 1px) rotateZ(0.5deg)}
+ 50% {transform: translate(0px, 1px) rotateZ(0deg)}
+ 75% {transform: translate(1px, 0px) rotateZ(-0.5deg)}
+ 100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+a {
+ text-decoration: none;
+ color: #ffffff;
+}
+
+.twitter-icon {
+ position: absolute;
+ z-index: 4;
+ left: 22px;
+ top: 440px;
+}
+
+/*ゲーム画面*/
+.f-container-enemy {
+ justify-content: flex-start;
+}
+
+h1.enemy_number {
+ font-size: 16px;
+ width: 84px;
+ height: 39px;
+ text-align: center;
+ line-height: 45px;
+ border: 3px solid #ffffff;
+ border-radius: 5px;
+}
+
+h1.enemy_name {
+ font-size: 16px;
+ width: 189px;
+ height: 39px;
+ text-align: left;
+ padding-left: 15px;
+ line-height: 45px;
+ border: 3px solid #ffffff;
+ border-radius: 5px;
+}
+
+.enemy_power {
+ border: 3px solid #ffffff;
+ border-radius: 5px;
+}
+
+meter {
+ width: 294px;
+ height: 20px;
+}
+
+.game_img {
+ position: absolute;
+ left: 0px;
+ top: 71px;
+ z-index: 1;
+}
+
+.buruburuImg {
+ animation: hurueruImg 50ms 6;
+}
+
+@keyframes hurueruImg {
+ 0% {transform: translate(0px, 0px) rotateZ(0deg)}
+ 25% {transform: translate(1px, 1px) rotateZ(0.5deg)}
+ 50% {transform: translate(0px, 1px) rotateZ(0deg)}
+ 75% {transform: translate(1px, 0px) rotateZ(-0.5deg)}
+ 100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+.buruburuTime {
+ animation: hurueruTime 50ms 6, color-change 1s ease-in 1;
+}
+
+@keyframes hurueruTime {
+ 0% {transform: translate(0px, 0px) rotateZ(0deg)}
+ 25% {transform: translate(2px, 2px) rotateZ(0.5deg)}
+ 50% {transform: translate(0px, 2px) rotateZ(0deg)}
+ 75% {transform: translate(2px, 0px) rotateZ(-0.5deg)}
+ 100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+@keyframes color-change {
+ 0% {color: #FF0000;}
+ 100% {color: #FFFFFF;}
+}
+
+h5.question {
+ width: 294px;
+ height: 100px;
+ text-align: center;
+ line-height: 100px;
+ font-size: 36px;
+ position: absolute;
+ top: 320px; /*350*/
+ left: 0px;
+ border: 3px solid #ffffff;
+ border-radius: 5px;
+ background: rgba(0,0,0,0.8);
+ z-index: 2;
+}
+
+.message {
+ width: 90px;
+ height: 40px;
+ text-align: center;
+ line-height: 40px;
+ font-size: 16px;
+ position: absolute;
+ top: 270px; /*300*/
+ left: 30px;
+ border: 3px solid #ffffff;
+ border-radius: 5px;
+ background: rgba(0,0,0,0.8);
+ z-index: 5;
+}
+
+.green {
+ color: #99FF99;
+}
+
+.red {
+ color: #FF0000;
+}
+
+.answers {
+ position: absolute;
+ top: 435px; /*465*/
+ left: 4px;
+ z-index: 3;
+}
+
+.btn-push {
+  display: inline-block;
+  width: 90px;
+  height: 85px;
+  text-align: center;
+  line-height: 80px;
+  background: #ffa300;
+  font-size: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border-bottom: 5px solid #d37800;
+}
+
+.mc {
+ margin: 0 11px;
+}
+
+.btn-push:active {
+    transform: translateY(5px);
+    border-bottom: none;
+}
+
+.gameTimer {
+ position: absolute;
+ top: 530px; /*530*/
+ left: 89px;
+ z-index: 4;
+}
+
+input.timer {
+ width: 114px;
+ height: 114px;
+ text-align: center;
+ line-height: 117px;
+ font-size: 48px;
+ font-weight: bold;
+ border: 3px solid #ffffff;
+ border-radius: 60px;
+ background: #000000;
+ color: #ffffff;
+}
+
